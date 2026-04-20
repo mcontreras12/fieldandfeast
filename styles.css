@@ -196,7 +196,32 @@ footer ul {
 
 /* MEDIA QUERY (medium)*/
 
+@media (min-width: 600px) {
+    main {
+        padding: 2rem;
+    }
+    div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 /* MEDIA QUERY (large) */
+
+@media (min-width: 900px) {
+    main {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    div {
+        grid-template-columns: 1fr 1fr;
+    }
+}
 
 /* MEDIA QUERY (xl) */
 
+@media (min-width: 1200px) {
+    main {
+        max-width: 900px;
+    }
+}
