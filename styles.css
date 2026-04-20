@@ -5,9 +5,95 @@
 
 /* CSS RESET */
 
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    display: block;
+    border-radius: 6px;
+}
+
+ul {
+    padding-left: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
 /* ROOT VARIABLES */
 
+:root {
+    --midnight-blue: #1F2A44;
+    --olive-green: #76885B;
+    --champagne-gold: #E5C185;
+    --linen: #F8F4EC;
+    --dark-charcoal: #2B2B2B;
+    --soft-white: #FAF9F6;
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
+}
+
 /* GLOBAL STYLES (mobile first/small) */
+
+/* body styles */
+
+body {
+    font-family: var(--font-body);
+    background: var(--linen);
+    color: var(--dark-charcoal);
+    line-height: 1.6;
+}
+
+/* header styles */
+
+header {
+    background: var(--midnight-blue);
+    color: var(--soft-white);
+    text-align: center;
+    padding: 2rem 1.5rem;
+}
+
+header figure img{
+    max-width: 120px;
+    margin: 0 auto 1rem;
+}
+
+h1 {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+}
+
+header p {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: var(--soft-white);
+    font-family: var(--font-heading);
+}
+
+/* nav styles */
+
+nav {
+    background: var(--champagne-gold);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.75rem 0;
+}
+
+nav a {
+    color: var(--midnight-blue);
+    font-weight: 600;
+}
+
+
 
 /* MEDIA QUERY (medium)*/
 
