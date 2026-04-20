@@ -36,6 +36,8 @@ a {
     --soft-white: #FAF9F6;
     --font-heading: 'Playfair Display', serif;
     --font-body: 'Inter', sans-serif;
+
+    --max-width: 450px;
 }
 
 /* GLOBAL STYLES (mobile first/small) */
