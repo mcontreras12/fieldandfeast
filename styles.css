@@ -104,7 +104,7 @@ nav ul {
     display: flex;
     justify-content: center;
     padding: 0.7rem 0;
-    gap: 1.2rem;
+    gap: 2rem;
 }
 
 nav a {
@@ -160,12 +160,14 @@ p {
     border-radius: 8px;
     margin-bottom: 1.5rem;
     box-shadow: 0 2px 6px var(--dark-charcoal);
+    margin-bottom: 0.5rem;
 }
 
 #offerings section section section {
     background: none;
     padding: 0;
     box-shadow: none;
+    
 }
 
 #offerings ul {
@@ -178,7 +180,7 @@ p {
 }
 
 #offerings section > section p, #offerings section > section li {
-    line-height: 1;
+    line-height: 1.2;
     font-size: 0.8rem;
 }
 
@@ -259,11 +261,28 @@ footer ul {
 @media (min-width: 600px) {
     main {
         padding: 2rem;
+        max-width: 650px;
     }
     div {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+     #offerings > section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    /* Make the heading span full width */
+    #offerings > section > h2 {
+        grid-column: 1 / -1;
+    }
+
+    /* Make Monthly Basket full width */
+    #offerings > section > section:last-of-type {
+        grid-column: 1 / -1;
+    }
+    
 }
 
 /* MEDIA QUERY (large) */
@@ -276,6 +295,11 @@ footer ul {
     div {
         grid-template-columns: 1fr 1fr;
     }
+     #gallery div {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
 }
 
 /* MEDIA QUERY (xl) */
@@ -283,5 +307,10 @@ footer ul {
 @media (min-width: 1200px) {
     main {
         max-width: 900px;
+    }
+     #gallery div {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr); /* 👈 5 images in one row */
+        gap: 1rem;
     }
 }
